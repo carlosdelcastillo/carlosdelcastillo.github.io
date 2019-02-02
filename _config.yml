@@ -56,7 +56,7 @@ email: carlosdelcastilloortiz@gmail.com
 authors:
     carlos:
         name: Carlos del Castillo
-        bio: El secreto de la felicidad es tener gustos sencillos y una mente compleja. Un ingeniero informático natural de Manzanares y madrileño artificial.
+        bio: 'Ingeniero informático natural de Manzanares y madrileño artificial. "El secreto de la felicidad es tener gustos sencillos y una mente compleja."'
         external-image: false
         picture: assets/images/profile.png
         twitter: _cdelcastillo_
@@ -64,7 +64,7 @@ authors:
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
 # normal = 560px / large = 810px
-width: normal
+width: large
 
 # if you don't need pagination, comment the *paginate* configs below
 # paginate: 5
