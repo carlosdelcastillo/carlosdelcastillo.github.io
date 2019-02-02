@@ -3,7 +3,7 @@ name: Carlos del Castillo
 bio: Software engineer and manager.<br><br>"A day without learning is a day wasted. There is so much to learn and so little time to learn it.”
 
 # twitter summary info
-description: Cloud place where my technical stuff is.
+description: Website repo where my technical stuff is.
 
 # if it's an external image, update below for true
 # better with square images
@@ -22,7 +22,7 @@ url: https://carlosdelcastillo.github.io
 permalink: /:title/
 
 # To enable google analytics, supply your token below
-# analytics-google: 'UA-MYANALYTICS'
+analytics-google: 'UA-133667665-1'
 
 # To enable piwik tracking, supply your url & site ID below
 # analytics-piwik-url: 'piwik.my-host.com'
@@ -41,7 +41,7 @@ instagram:  _cdelcastillo_
 # pinterest: mypinterest
 linkedin: carlosdelcastilloortiz
 # youtube: myyoutube
-# spotify: myspotify
+spotify: carlosdelcastilloortiz
 github: carlosdelcastillo
 # gitlab: mygitlab
 # lastfm: mylastfm
