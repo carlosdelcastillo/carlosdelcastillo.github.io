@@ -1,14 +1,15 @@
 # Carlos del Castillo
-[https://carlosdelcastillo.github.io/]()
+
+<https://carlosdelcastillo.github.io/>
 
 Build with [Jekyll](https://github.com/jekyll/jekyll) using [Indigo theme](https://github.com/sergiokopplin/indigo)
 
 Forked from [https://github.com/sergiokopplin/indigo]()
 
-
 ## Contact me
-__[carlosdelcastilloortiz@gmail.com](mailto:carlosdelcastilloortiz@gmail.com)__  
-__[www.linkedin.com/in/carlosdelcastilloortiz](https://www.linkedin.com/in/carlosdelcastilloortiz/)__  
+
+__<carlosdelcastilloortiz@gmail.com>__  
+__<https://www.linkedin.com/in/carlosdelcastilloortiz/>__  
 
 ## What has inside
 
