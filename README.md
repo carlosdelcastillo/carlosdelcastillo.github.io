@@ -4,7 +4,7 @@
 
 Build with [Jekyll](https://github.com/jekyll/jekyll) using [Indigo theme](https://github.com/sergiokopplin/indigo)
 
-Forked from [https://github.com/sergiokopplin/indigo]()
+Forked from <https://github.com/sergiokopplin/indigo>
 
 ## Contact me
 
