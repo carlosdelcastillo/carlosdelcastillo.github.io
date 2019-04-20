@@ -25,5 +25,6 @@ Ex federated basket player. Runner amateur.
 * __[Open source projects that I love](https://bit.ly/projects-i-love)__
 
 ## Contact
+
 __[carlosdelcastilloortiz@gmail.com](mailto:carlosdelcastilloortiz@gmail.com)__  
 __[www.linkedin.com/in/carlosdelcastilloortiz](https://www.linkedin.com/in/carlosdelcastilloortiz/)__  
