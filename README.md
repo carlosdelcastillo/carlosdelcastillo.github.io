@@ -11,15 +11,15 @@ Professional info and contact:
 
 ## Contact me
 
-![Email](https://img.shields.io/badge/email-carlosdelcastilloortiz@gmail.com-blue.svg?link=mailto:carlosdelcastilloortiz@gmail.com&style=social&logo=Gmail)
+[![Email](https://img.shields.io/badge/email-carlosdelcastilloortiz@gmail.com-blue.svg?style=social&logo=Gmail)](mailto:carlosdelcastilloortiz@gmail.com?subject=Hi%20Carlos%21%20%28from%20https%3A%2F%2Fcarlosdelcastillo.github.io%20Readme%29)
 
-![Linkedin](https://img.shields.io/badge/LinkedIn-carlosdelcastilloortiz-blue.svg?link=https://www.linkedin.com/in/carlosdelcastilloortiz&style=social&logo=linkedin)
+[![Linkedin](https://img.shields.io/badge/LinkedIn-carlosdelcastilloortiz-blue.svg?style=social&logo=linkedin)](https://www.linkedin.com/in/carlosdelcastilloortiz)
 
-![GitHub](https://img.shields.io/badge/Github-carlosdelcastillo-blue.svg?link=https://github.com/carlosdelcastillo&style=social&logo=github)
-![GitHub followers](https://img.shields.io/github/followers/carlosdelcastillo.svg?label=Follow%20me&style=social)
+[![GitHub](https://img.shields.io/badge/Github-carlosdelcastillo-blue.svg?style=social&logo=github)](https://github.com/carlosdelcastillo)
+![GitHub followers](https://img.shields.io/github/followers/carlosdelcastillo.svg?style=social)
 
-![Twitter](https://img.shields.io/badge/Twitter-__CDelCastillo__-blue.svg?link=https://github.com/carlosdelcastillo&style=social&logo=twitter)
-![Twitter Follow](https://img.shields.io/twitter/follow/_CDelCastillo_.svg?label=Follow%20me&style=social)
+[![Twitter](https://img.shields.io/badge/Twitter-__CDelCastillo__-blue.svg?style=social&logo=twitter)](https://twitter.com/_CDelCastillo_)
+![Twitter followers](https://img.shields.io/twitter/follow/_CDelCastillo_.svg?label=Followers&style=social)
 
 ## What has inside
 
