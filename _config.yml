@@ -1,9 +1,9 @@
 # main text of home
 name: Carlos del Castillo
-bio: Software engineer.<br><br>"A day without learning is a day wasted. There is so much to learn and so little time to learn it.”
+bio: Software engineer<br><br>"A day without learning is a day wasted. There is so much to learn and so little time to learn it.”
 
 # twitter summary info
-description: Website repo where my technical info is.
+description: Website repo where my technical info is supposed to be.
 
 # if it's an external image, update below for true
 # better with square images
