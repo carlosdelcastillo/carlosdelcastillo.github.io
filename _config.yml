@@ -23,7 +23,7 @@ url: https://carlosdelcastillo.github.io
 permalink: /:title/
 
 # To enable google analytics, supply your token below
-analytics-google: 'UA-133667665-1'
+analytics-google: "UA-133667665-1"
 
 # To enable piwik tracking, supply your url & site ID below
 # analytics-piwik-url: 'piwik.my-host.com'
@@ -38,7 +38,7 @@ disqus:
 #facebook: myfacebook
 twitter: _cdelcastillo_
 # google: mygoogle
-instagram:  _cdelcastillo_
+instagram: _cdelcastillo_
 # pinterest: mypinterest
 linkedin: carlosdelcastilloortiz
 # youtube: myyoutube
@@ -50,17 +50,18 @@ github: carlosdelcastillo
 # quora: userquora
 # reddit: username
 medium: carlosdelcastillo
+devto: carlosdelcastillo
 # vimeo: myvimeo
 # lanyrd: mylanyrd
 email: carlosdelcastilloortiz@gmail.com
 
 authors:
-    carlos:
-        name: Carlos del Castillo
-        bio: 'Ingeniero informático natural de Manzanares y madrileño artificial. "El secreto de la felicidad es tener gustos sencillos y una mente compleja."'
-        external-image: false
-        picture: assets/images/profile.png
-        twitter: _cdelcastillo_
+  carlos:
+    name: Carlos del Castillo
+    bio: 'Ingeniero informático natural de Manzanares y madrileño artificial. "El secreto de la felicidad es tener gustos sencillos y una mente compleja."'
+    external-image: false
+    picture: assets/images/profile.png
+    twitter: _cdelcastillo_
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
@@ -104,12 +105,13 @@ plugins:
   - jekyll-admin
 
 jekyll-mentions:
-    base_url: https://github.com
+  base_url: https://github.com
 
 compress_html:
-    ignore:
-        envs:
-        - development
-        - stage
+  ignore:
+    envs:
+      - development
+      - stage
 
-exclude: ["travis.sh", "Rakefile", "README.md", "Gemfile", "Gemfile.lock", "FAQ.md"]
+exclude:
+  ["travis.sh", "Rakefile", "README.md", "Gemfile", "Gemfile.lock", "FAQ.md"]
