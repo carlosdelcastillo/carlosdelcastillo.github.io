@@ -8,7 +8,7 @@ description: Website repo where my technical info is supposed to be.
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: assets/images/profile.png
+picture: assets/images/profile.jpg
 about-picture: assets/images/about.jpeg
 
 # If you want to include your resume, set to true
@@ -60,7 +60,7 @@ authors:
     name: Carlos del Castillo
     bio: 'Ingeniero informático natural de Manzanares y madrileño artificial. "El secreto de la felicidad es tener gustos sencillos y una mente compleja."'
     external-image: false
-    picture: assets/images/profile.png
+    picture: assets/images/profile.jpg
     twitter: _cdelcastillo_
 
 # do you want a larger site? change the option below
