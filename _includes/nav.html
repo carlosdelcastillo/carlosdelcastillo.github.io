@@ -2,14 +2,14 @@
     <ul class="list">
         {% if page.title != "Home" %}
         <li class="item">
-            <a class="link" href="{{ site.url }}/">Home</a>
+            <a class="link" href="{{ site.url }}/"><img class="emoji" alt="Home Icon" src="https://github.githubassets.com/images/icons/emoji/unicode/1f3e0.png"> Home</a>
         </li>
         {% endif %}
 
         {% if site.blog == true %}
         {% if page.title != "Blog" %}
         <li class="item">
-            <a class="link" href="{{ site.url }}/blog">Blog</a>
+            <a class="link" href="{{ site.url }}/blog"><img class="emoji" alt="Blog Icon"  src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d1.png"> Posts</a>
         </li>
         {% endif %}
         {% endif %}
