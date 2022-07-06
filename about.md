@@ -2,6 +2,7 @@
 title: About me
 layout: page
 ---
+{:.animated}
 ![Profile Image]({{ site.url }}/{{ site.about-picture }})
 
 ## :page_facing_up: About me
@@ -47,9 +48,9 @@ Ex-federated basket player. Runner amateur. I go to the gym 2 times a week :v:. 
 :black_square_button: Take time to write a blog  
 :black_square_button: Develop my own non-profit project  
 :black_square_button: Improve this website  
-:white_check_mark: Enjoy my job and feel lucky about it  
+:white_check_mark: Enjoy my job and feel lucky about it
 
 ## :calling: Contact  
 
-__[carlosdelcastilloortiz@gmail.com](mailto:carlosdelcastilloortiz@gmail.com)__  
-__[www.linkedin.com/in/carlosdelcastilloortiz](https://www.linkedin.com/in/carlosdelcastilloortiz/)__
+__[carlosdelcastilloortiz@gmail.com](mailto:carlosdelcastilloortiz@gmail.com){:target="_blank"}__  
+__[www.linkedin.com/in/carlosdelcastilloortiz](https://www.linkedin.com/in/carlosdelcastilloortiz/){:target="_blank"}__

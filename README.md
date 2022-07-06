@@ -1,17 +1,17 @@
 # Carlos del Castillo
 
-![PageSpeed](https://api.speedbadge.io/v1?url=https://carlosdelcastillo.com&strat=desktop)
+![PageSpeed](https://api.speedbadge.io/v1?url=https://carlosdelcastillo.dev&strat=desktop)
 ![GitHub last commit](https://img.shields.io/github/last-commit/carlosdelcastillo/carlosdelcastillo.github.io.svg)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/carlosdelcastillo/carlosdelcastillo.github.io.svg)
 ![GitHub repository size](https://img.shields.io/github/repo-size/carlosdelcastillo/carlosdelcastillo.github.io.svg)
 
 Professional info and contact:
 
-<https://carlosdelcastillo.com/>
+<https://carlosdelcastillo.dev/>
 
 ## Contact me
 
-[![Email](https://img.shields.io/badge/email-carlosdelcastilloortiz@gmail.com-blue.svg?style=social&logo=Gmail)](mailto:carlosdelcastilloortiz@gmail.com?subject=Hi%20Carlos%21%20%28from%20https%3A%2F%2Fcarlosdelcastillo.com%20Readme%29)
+[![Email](https://img.shields.io/badge/email-carlosdelcastilloortiz@gmail.com-blue.svg?style=social&logo=Gmail)](mailto:carlosdelcastilloortiz@gmail.com?subject=Hi%20Carlos%21%20%28from%20https%3A%2F%2Fcarlosdelcastillo.dev%20Readme%29)
 
 [![Linkedin](https://img.shields.io/badge/LinkedIn-carlosdelcastilloortiz-blue.svg?style=social&logo=linkedin)](https://www.linkedin.com/in/carlosdelcastilloortiz)
 
