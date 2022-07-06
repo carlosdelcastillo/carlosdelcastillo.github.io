@@ -1,6 +1,6 @@
 # Carlos del Castillo
 
-![PageSpeed](https://api.speedbadge.io/v1?url=https://carlosdelcastillo.dev&strat=desktop)
+![Status](https://img.shields.io/website?url=https%3A%2F%2Fcarlosdelcastillo.dev)
 ![GitHub last commit](https://img.shields.io/github/last-commit/carlosdelcastillo/carlosdelcastillo.github.io.svg)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/carlosdelcastillo/carlosdelcastillo.github.io.svg)
 ![GitHub repository size](https://img.shields.io/github/repo-size/carlosdelcastillo/carlosdelcastillo.github.io.svg)
@@ -29,3 +29,5 @@ Forked from <https://github.com/sergiokopplin/indigo>
 
 - [Jekyll](https://jekyllrb.com/), [Sass](http://sass-lang.com/) ~[RSCSS](http://rscss.io/)~ and [SVG](https://www.w3.org/Graphics/SVG/)
 - No JS. :sunglasses:
+  
+![Jokes Card](https://readme-jokes.vercel.app/api)
