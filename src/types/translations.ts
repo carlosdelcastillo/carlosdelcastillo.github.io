@@ -67,10 +67,6 @@ export interface Translations {
       description?: string;
     }[];
   };
-  certifications: {
-    title: string;
-    items: string[];
-  };
   contact: {
     title: string;
     subtitle: string;
