@@ -1,0 +1,29 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Navigation from '@/components/Navigation';
+import Hero from '@/components/Hero';
+import About from '@/components/About';
+import Experience from '@/components/Experience';
+import Education from '@/components/Education';
+import Contact from '@/components/Contact';
+import Footer from '@/components/Footer';
+import type { Locale } from '@/locales';
+
+const { lang, title, description } = Astro.props as {
+  lang: Locale;
+  title: string;
+  description: string;
+};
+---
+
+<BaseLayout title={title} description={description} lang={lang}>
+  <Navigation initialLang={lang} client:load />
+  <main id="top">
+    <Hero initialLang={lang} client:load />
+    <About initialLang={lang} client:visible />
+    <Experience initialLang={lang} client:visible />
+    <Education initialLang={lang} client:visible />
+    <Contact initialLang={lang} client:visible />
+  </main>
+  <Footer initialLang={lang} client:visible />
+</BaseLayout>

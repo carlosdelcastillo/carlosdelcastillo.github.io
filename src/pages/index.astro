@@ -1,0 +1,24 @@
+---
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Carlos del Castillo</title>
+		<script is:inline>
+			(() => {
+				const isSpanishBrowser = globalThis.navigator.language
+					.toLowerCase()
+					.startsWith('es');
+
+				const preferredLocale = isSpanishBrowser ? 'es' : 'en';
+
+				const targetUrl = `/${preferredLocale}/${globalThis.location.search}${globalThis.location.hash}`;
+				globalThis.location.replace(targetUrl);
+			})();
+		</script>
+	</head>
+	<body></body>
+</html>

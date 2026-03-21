@@ -1,0 +1,189 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  lang?: string;
+}
+
+const { title, description, lang = 'en' } = Astro.props;
+const siteUrl = Astro.site
+  ? new URL(Astro.site)
+  : new URL('https://carlosdelcastillo.dev');
+const stripLocalePrefix = (path: string) =>
+  path.replace(/^\/(en|es)(\/|$)/, '/');
+const requestedPath = Astro.url.pathname;
+const effectivePath = requestedPath === '/' ? '/en/' : requestedPath;
+const unlocalizedPath = stripLocalePrefix(effectivePath) || '/';
+const localizedPath = (locale: 'en' | 'es') =>
+  `/${locale}${unlocalizedPath === '/' ? '/' : unlocalizedPath}`;
+const canonicalUrl = new URL(effectivePath, siteUrl).href;
+const alternateEnUrl = new URL(localizedPath('en'), siteUrl).href;
+const alternateEsUrl = new URL(localizedPath('es'), siteUrl).href;
+const ogLocale = lang === 'es' ? 'es_ES' : 'en_US';
+import '@fontsource/inter';
+---
+
+<!doctype html>
+<!--
+
+                                                                                               
+  ▄▄           ▗▄▖                    ▗▖     ▗▄▖         ▄▄                  █  ▗▄▖  ▗▄▖       
+ █▀▀▌          ▝▜▌                    ▐▌     ▝▜▌        █▀▀▌           ▐▌    ▀  ▝▜▌  ▝▜▌       
+▐▛    ▟██▖ █▟█▌ ▐▌   ▟█▙ ▗▟██▖      ▟█▟▌ ▟█▙  ▐▌       ▐▛    ▟██▖▗▟██▖▐███  ██   ▐▌   ▐▌   ▟█▙ 
+▐▌    ▘▄▟▌ █▘   ▐▌  ▐▛ ▜▌▐▙▄▖▘     ▐▛ ▜▌▐▙▄▟▌ ▐▌       ▐▌    ▘▄▟▌▐▙▄▖▘ ▐▌    █   ▐▌   ▐▌  ▐▛ ▜▌
+▐▙   ▗█▀▜▌ █    ▐▌  ▐▌ ▐▌ ▀▀█▖     ▐▌ ▐▌▐▛▀▀▘ ▐▌       ▐▙   ▗█▀▜▌ ▀▀█▖ ▐▌    █   ▐▌   ▐▌  ▐▌ ▐▌
+ █▄▄▌▐▙▄█▌ █    ▐▙▄ ▝█▄█▘▐▄▄▟▌     ▝█▄█▌▝█▄▄▌ ▐▙▄       █▄▄▌▐▙▄█▌▐▄▄▟▌ ▐▙▄ ▗▄█▄▖ ▐▙▄  ▐▙▄ ▝█▄█▘
+  ▀▀  ▀▀▝▘ ▀     ▀▀  ▝▀▘  ▀▀▀       ▝▀▝▘ ▝▀▀   ▀▀        ▀▀  ▀▀▝▘ ▀▀▀   ▀▀ ▝▀▀▀▘  ▀▀   ▀▀  ▝▀▘ 
+                                                                                               
+                                                                                               
+
+EN: If you made it this far, we already have something in common.
+EN: Drop me a message and let's build something meaningful together.
+
+ES: Si has llegado hasta aquí, ya tenemos algo en común.
+ES: Escríbeme y creemos algo grande juntos.
+
+mailto:carlosdelcastilloortiz@gmail.com
+https://linkedin.com/in/carlosdelcastilloortiz
+-->
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:site_name" content="Carlos del Castillo" />
+    <meta property="og:locale" content={ogLocale} />
+    <meta
+      property="og:locale:alternate"
+      content={lang === 'es' ? 'en_US' : 'es_ES'}
+    />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta
+      property="og:image"
+      content={new URL('/og-image.jpg', Astro.url).href}
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalUrl} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta
+      property="twitter:image"
+      content={new URL('/og-image.jpg', Astro.url).href}
+    />
+
+    <!-- Additional SEO -->
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Carlos del Castillo" />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" hreflang="en" href={alternateEnUrl} />
+    <link rel="alternate" hreflang="es" href={alternateEsUrl} />
+    <link rel="alternate" hreflang="x-default" href={alternateEnUrl} />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <!-- Keywords & Author -->
+    <meta
+      name="keywords"
+      content="Carlos del Castillo, Engineering Manager, Software Architect, Backend, Fintech, Leadership, Madrid"
+    />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json" is:inline>
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Carlos del Castillo",
+        "jobTitle": "Backend Engineering Manager & Software Architect",
+        "image": "https://carlosdelcastillo.dev/profile-cropped.png",
+        "sameAs": [
+          "https://linkedin.com/in/carlosdelcastilloortiz",
+          "https://github.com/carlosdelcastillo"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Madrid",
+          "addressCountry": "Spain"
+        }
+      }
+    </script>
+
+    <title>{title}</title>
+  </head>
+  <body>
+    <div id="app" class="min-h-screen bg-background text-foreground">
+      <slot />
+    </div>
+
+    <script>
+      // Initialize theme on page load
+      function initializeTheme() {
+        const savedTheme = localStorage.getItem('theme') || 'system';
+        const root = document.documentElement;
+
+        if (savedTheme === 'system') {
+          const systemTheme = window.matchMedia('(prefers-color-scheme: dark)')
+            .matches
+            ? 'dark'
+            : 'light';
+          root.classList.toggle('dark', systemTheme === 'dark');
+        } else {
+          root.classList.toggle('dark', savedTheme === 'dark');
+        }
+      }
+
+      // Run initialization
+      initializeTheme();
+
+      // Listen for system theme changes
+      window
+        .matchMedia('(prefers-color-scheme: dark)')
+        .addEventListener('change', (e) => {
+          const savedTheme = localStorage.getItem('theme');
+          if (savedTheme === 'system' || !savedTheme) {
+            document.documentElement.classList.toggle('dark', e.matches);
+          }
+        });
+    </script>
+
+    <!--
+
+                                                                                               
+  ▄▄           ▗▄▖                    ▗▖     ▗▄▖         ▄▄                  █  ▗▄▖  ▗▄▖       
+ █▀▀▌          ▝▜▌                    ▐▌     ▝▜▌        █▀▀▌           ▐▌    ▀  ▝▜▌  ▝▜▌       
+▐▛    ▟██▖ █▟█▌ ▐▌   ▟█▙ ▗▟██▖      ▟█▟▌ ▟█▙  ▐▌       ▐▛    ▟██▖▗▟██▖▐███  ██   ▐▌   ▐▌   ▟█▙ 
+▐▌    ▘▄▟▌ █▘   ▐▌  ▐▛ ▜▌▐▙▄▖▘     ▐▛ ▜▌▐▙▄▟▌ ▐▌       ▐▌    ▘▄▟▌▐▙▄▖▘ ▐▌    █   ▐▌   ▐▌  ▐▛ ▜▌
+▐▙   ▗█▀▜▌ █    ▐▌  ▐▌ ▐▌ ▀▀█▖     ▐▌ ▐▌▐▛▀▀▘ ▐▌       ▐▙   ▗█▀▜▌ ▀▀█▖ ▐▌    █   ▐▌   ▐▌  ▐▌ ▐▌
+ █▄▄▌▐▙▄█▌ █    ▐▙▄ ▝█▄█▘▐▄▄▟▌     ▝█▄█▌▝█▄▄▌ ▐▙▄       █▄▄▌▐▙▄█▌▐▄▄▟▌ ▐▙▄ ▗▄█▄▖ ▐▙▄  ▐▙▄ ▝█▄█▘
+  ▀▀  ▀▀▝▘ ▀     ▀▀  ▝▀▘  ▀▀▀       ▝▀▝▘ ▝▀▀   ▀▀        ▀▀  ▀▀▝▘ ▀▀▀   ▀▀ ▝▀▀▀▘  ▀▀   ▀▀  ▝▀▘ 
+                                                                                               
+                                                                                               
+
+EN: If you made it this far, we already have something in common.
+EN: Drop me a message and let's build something meaningful together.
+
+ES: Si has llegado hasta aquí, ya tenemos algo en común.
+ES: Escríbeme y creemos algo grande juntos.
+
+mailto:carlosdelcastilloortiz@gmail.com
+https://linkedin.com/in/carlosdelcastilloortiz
+    -->
+  </body>
+</html>
+
+<style is:global>
+  @import '@/styles/globals.css';
+
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+</style>
