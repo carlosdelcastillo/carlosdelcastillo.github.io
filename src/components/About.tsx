@@ -65,8 +65,8 @@ export default function About({ initialLang = 'en' }: Readonly<AboutProps>) {
             >
               {translations.about.quickStats.map((stat) => (
                 <div key={`${stat.label}-${stat.value}`} className="glass p-4 rounded-xl border-border/40 text-center">
-                   <div className="text-2xl font-bold gradient-text">{stat.value}</div>
-                   <div className="text-sm text-muted-foreground font-medium">{stat.label}</div>
+                   <div className="text-lg font-bold gradient-text break-words leading-tight">{stat.value}</div>
+                   <div className="text-sm text-muted-foreground font-medium mt-1">{stat.label}</div>
                 </div>
               ))}
             </motion.div>

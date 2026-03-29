@@ -104,7 +104,6 @@ export default function Navigation({
 
     if (href.startsWith('#')) {
       event.preventDefault();
-
       scrollToHash(href);
       closeMenuIfNeeded(closeMobileMenu);
       return;
@@ -288,7 +287,7 @@ export default function Navigation({
                     onClick={(event) =>
                       handleNavLinkClick(event, item.href, true)
                     }
-                    className={`text-sm font-medium transition-colors hover:text-primary ${
+                    className={`text-sm font-medium transition-colors ${
                       currentPath === item.href
                         ? 'text-primary'
                         : 'text-muted-foreground'
