@@ -11,8 +11,8 @@ export const es: Translations = {
   hero: {
     greeting: 'Soy Carlos del Castillo',
     description: [
-      'Engineering Manager con una base técnica hands-on en ingeniería de software y arquitectura, trabajando en la intersección de fintech, desarrollo, data y producto.',
-      'Construyo equipos, arquitectura y modelos de entrega que escalan negocio con seguridad, cumplimiento y fiabilidad.',
+      'Engineering Manager con más de 15 años en desarrollo de software, arquitectura y consultoría — construyendo plataformas y equipos en entornos fintech y regulados.',
+      'Combino profundidad técnica y perspectiva organizativa para entregar sistemas que escalan y equipos que los sostienen.',
     ],
     cta: {
       about: 'Conoce Más',
@@ -23,9 +23,9 @@ export const es: Translations = {
   about: {
     title: 'Sobre Mí',
     content: [
-      'Desde 2009 trabajo en desarrollo de software, arquitectura y liderazgo de ingeniería.',
-      'Mi perfil combina ejecución técnica y construcción organizativa: diseño de plataformas escalables, evolución de procesos y desarrollo de equipos de alto rendimiento.',
-      'Me motiva llevar organizaciones desde fases de crecimiento inicial hasta modelos de entrega consolidados, manteniendo foco en impacto de negocio, regulación y excelencia operativa.',
+      'Desde 2009 he trabajado a lo largo de todo el espectro de la ingeniería de software: desde desarrollo técnico y arquitectura hasta consultoría, development lead y engineering management.',
+      'Mi perfil combina profundidad técnica con liderazgo organizativo — diseñando plataformas escalables, evolucionando procesos de ingeniería y construyendo equipos de alto rendimiento en entornos complejos y regulados.',
+      'A lo largo de mi carrera he contribuido en múltiples capas de la función de ingeniería, incluyendo consultoría para clientes del sector financiero y aportación estratégica en dirección tecnológica, estructura de equipos y alineamiento producto-tecnología.',
     ],
     quickStats: [
       { value: 'Desde 2009', label: 'Experiencia en liderazgo de ingeniería' },
@@ -62,6 +62,8 @@ export const es: Translations = {
             'Equipos de Alto Rendimiento',
             'Hoja de Ruta Técnica',
             'Fintech y Sistemas Regulados',
+            'Consultoría Empresarial',
+            'Desarrollo Asistido por IA',
             'Experiencia de Desarrollador (DevEx)',
             'Entrega Ágil',
           ],
@@ -71,7 +73,7 @@ export const es: Translations = {
   },
   experience: {
     title: 'Experiencia Profesional',
-    technologiesLabel: 'Tecnologias clave',
+    technologiesLabel: 'Tecnologías clave',
     companies: {
       myinvestor: {
         name: 'MyInvestor',
@@ -122,7 +124,7 @@ export const es: Translations = {
     cta: 'Iniciar Conversación',
     emailSubject: 'Hablemos sobre una posible colaboración',
     description:
-      'Siempre me interesa hablar sobre nuevas oportunidades, proyectos innovadores y posibles colaboraciones. Si buscas liderazgo tecnico, guia de arquitectura o explorar como podemos trabajar juntos, me encantara leerte.',
+      'Siempre me interesa hablar sobre nuevas oportunidades, proyectos innovadores y posibles colaboraciones. Si buscas liderazgo técnico, guía de arquitectura o explorar cómo podemos trabajar juntos, me encantará escucharte.',
     emailButton: 'Enviar Email',
     linkedinButton: 'Conectar en LinkedIn',
     location: 'Madrid, España',

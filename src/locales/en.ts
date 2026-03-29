@@ -11,8 +11,8 @@ export const en: Translations = {
   hero: {
     greeting: "I'm Carlos del Castillo",
     description: [
-      'Engineering Manager with a strong hands-on background in software engineering and architecture, operating at the intersection of fintech, development, data, and product.',
-      'I build teams, architecture, and delivery models that scale, deliver impact, and create long-term business value.',
+      'Engineering Manager with 15+ years spanning software development, architecture, and consulting — building platforms and teams in fintech and regulated environments.',
+      'I bring together technical depth and organizational perspective to deliver systems that scale, and the teams that sustain them.',
     ],
     cta: {
       about: 'About Me',
@@ -23,9 +23,9 @@ export const en: Translations = {
   about: {
     title: 'About Me',
     content: [
-      'Since 2009, I have worked across software development, architecture, and engineering leadership.',
-      'My profile combines technical execution with organizational building: designing scalable platforms, evolving processes, and developing high-performing teams.',
-      'I am motivated by guiding organizations from early growth stages to consolidated delivery models, while maintaining focus on business impact, regulation, and operational excellence.',
+      'Since 2009, I have worked across the full spectrum of software engineering: from hands-on development and architecture to technical consulting, development lead, and engineering management.',
+      'My profile combines technical depth with organizational leadership — designing scalable platforms, evolving engineering processes, and building high-performing teams in complex, regulated environments.',
+      'Throughout my career I have contributed at multiple layers of the engineering function, including enterprise consulting for financial clients and strategic input on technology direction, team structure, and product alignment.',
     ],
     quickStats: [
       { value: 'Since 2009', label: 'Engineering Leadership Experience' },
@@ -62,6 +62,8 @@ export const en: Translations = {
             'High-Performance Teams',
             'Technical Roadmapping',
             'Fintech & Regulated Systems',
+            'Enterprise Consulting',
+            'AI-Augmented Development',
             'Developer Experience (DevEx)',
             'Agile Delivery',
           ],
