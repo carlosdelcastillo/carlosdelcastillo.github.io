@@ -33,8 +33,8 @@ Built with a curated selection of industry-leading tools:
 
 ### Styling & Animation
 
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.36-0055FF?style=for-the-badge&logo=framer&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.2-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.38-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 
 ### Quality Assurance
 
@@ -82,7 +82,7 @@ A clean, scalable architecture:
 
 ## 🚀 Getting Started
 
-To run this project locally, ensure you have **Node.js 20.19+** installed.
+To run this project locally, ensure you have **Node.js 24.14.0** installed (pinned in `.nvmrc`).
 
 ```bash
 # 1. Clone the repository

@@ -30,4 +30,24 @@ Read `src/locales/en.ts` and `src/locales/es.ts`, then evaluate each section:
 **Footer**
 - Does the tagline reinforce the professional brand concisely?
 
-For each issue found, propose a specific improved version of the copy. Do not rewrite wholesale — surgical improvements only. After review, apply approved changes to both `en.ts` and `es.ts`.
+**README.md**
+
+Read `README.md` in full, then cross-reference with `package.json`, `.nvmrc`, and the actual `src/` directory tree.
+
+*Copy & brand:*
+
+- Does the tagline and overview description reflect the current professional positioning (EM + deep technical background, fintech, regulated)?
+- Do the Overview bullets and Key Features accurately describe what the site does — no stale claims, no missing capabilities?
+- Is the contact quote at the bottom consistent in tone with the rest of the portfolio copy?
+- Are there any generic filler phrases ("always happy to discuss", "let's connect") that should be tightened?
+
+*Technical accuracy:*
+
+- Every version badge (Astro, React, TypeScript, Tailwind, Framer Motion, Vitest, Playwright) must match the actual version in `package.json`. Flag any mismatch.
+- The Node.js requirement in "Getting Started" must match the version in `.nvmrc`.
+- Any `npm run <script>` mentioned in the README must exist in `package.json` scripts.
+- The project structure diagram must reflect the actual `src/` directory tree: every listed directory must exist, every existing directory must be listed, and inline descriptions must still be accurate.
+- No claim should contradict `CLAUDE.md` (e.g. claiming a CMS, an i18n library, or a state management library that is not used).
+- The contact links (email, LinkedIn, GitHub, X/Twitter) must match those in `src/locales/en.ts`.
+
+For each issue found, propose a specific improved version of the copy. Do not rewrite wholesale — surgical improvements only. After review, apply approved changes to `en.ts` and `es.ts` (locale changes) or `README.md` (README changes).

@@ -78,6 +78,30 @@ Execute each phase in order. On critical failure, stop and report — do not con
 
 ---
 
+## Phase 8 — README sync
+
+Read `README.md` and compare it against the actual state of the repository. Flag every discrepancy as a warning (not a hard failure), but list each one clearly so it can be fixed before merge.
+
+**Technical accuracy** — read `package.json` and `.nvmrc`:
+- Every version badge (Astro, React, TypeScript, Tailwind, Framer Motion, Vitest, Playwright) must match the actual version in `package.json`.
+- The Node.js requirement in "Getting Started" must match the version in `.nvmrc`.
+- Any `npm run <script>` referenced in the README must exist in `package.json` scripts.
+
+**Project structure** — list `src/` with one level of depth:
+- Every directory shown in the README structure diagram must exist.
+- Every directory that exists in `src/` must appear in the diagram.
+- Descriptions next to each directory (e.g. "Nanostores (theme/language)") must still be accurate.
+
+**Content accuracy** — read `src/locales/en.ts` and `CLAUDE.md`:
+- The Overview bullets and Key Features list must reflect what the site actually does (i18n approach, theme system, stack choices).
+- No claim in the README should contradict documented architecture decisions in `CLAUDE.md` (e.g. claiming a CMS, an i18n library, or a state library that is not used).
+- The contact links (email, LinkedIn, GitHub, X/Twitter) must match those in `src/locales/en.ts`.
+
+**Lighthouse badges** — read `CLAUDE.md` for the score targets:
+- Badge values must be ≥ the documented thresholds (Perf ≥ 96, A11y = 100, BP ≥ 96, SEO = 100). Flag if any badge shows a value below threshold.
+
+---
+
 ## Final report
 
 ```
