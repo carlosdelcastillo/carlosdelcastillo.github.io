@@ -107,3 +107,6 @@ pids/
 # -----------------------------------------------------------------------------
 # Any file ending in .local (e.g., TODO.local.md, notes.local.txt)
 *.local
+
+# Claude Code local settings (permissions config — not for public sharing)
+.claude/settings.local.json
