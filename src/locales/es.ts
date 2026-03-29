@@ -24,16 +24,18 @@ export const es: Translations = {
     title: 'Sobre Mí',
     content: [
       'Desde 2009 he trabajado a lo largo de todo el espectro de la ingeniería de software: desde desarrollo técnico y arquitectura hasta consultoría, development lead y engineering management.',
-      'Mi perfil combina profundidad técnica con liderazgo organizativo — diseñando plataformas escalables, evolucionando procesos de ingeniería y construyendo equipos de alto rendimiento en entornos complejos y regulados.',
+      'Combino profundidad técnica con liderazgo organizativo — diseñando plataformas escalables, evolucionando procesos de ingeniería y construyendo equipos de alto rendimiento en entornos complejos y regulados.',
       'A lo largo de mi carrera he contribuido en múltiples capas de la función de ingeniería, incluyendo consultoría para clientes del sector financiero y aportación estratégica en dirección tecnológica, estructura de equipos y alineamiento producto-tecnología.',
     ],
     quickStats: [
-      { value: 'Desde 2009', label: 'Experiencia en liderazgo de ingeniería' },
+      { value: 'Desde 2009', label: 'Experiencia en ingeniería de software' },
+      { value: '6+ Años', label: 'Gestión de personas' },
       { value: '~30 personas', label: 'Equipos creados y escalados' },
-      { value: 'Agile', label: 'Implantación real' },
+      { value: 'Metodologías Ágiles', label: 'Implantación real' },
       { value: 'Arquitecturas Escalables', label: 'Diseño e implantación' },
-      { value: 'Plataforma Cloud-Native', label: 'Construida desde cero' },
       { value: 'Sistemas Distribuidos', label: 'escalables' },
+      { value: 'Fintech y Banca', label: 'Dominio Experto' },
+      { value: 'Multinacional', label: 'Consultoría Empresarial' },
     ],
     coreExpertise: {
       title: 'Expertise Principal',
@@ -79,7 +81,7 @@ export const es: Translations = {
         name: 'MyInvestor',
         position: 'Backend Engineering Manager',
         period: 'Mayo 2019 - Presente',
-        description: 'Junto a un gran equipo, lidero la construcción de la plataforma del propio neobanco digital. Me incorporé como primer ingeniero, creando la arquitectura backend y el equipo desde cero. He impulsado la evolución de sistemas, procesos e integraciones en un entorno bancario regulado para escalar producto, fiabilidad y velocidad de entrega.',
+        description: 'Junto a un gran equipo, lidero la construcción de la plataforma del propio neobanco digital. Me incorporé como primer ingeniero interno del proyecto, creando la arquitectura backend y el equipo desde cero. He impulsado la evolución de sistemas, procesos e integraciones en un entorno bancario regulado para escalar producto, fiabilidad y velocidad de entrega.',
         technologies: ['Java', 'Python', 'React', 'Spring Boot', 'AWS', 'Microservices', 'Kubernetes', 'PostgreSQL', 'Oracle', 'RabbitMQ', 'kafka', 'REST APIs', 'Event Sourcing', 'CQRS'],
       },
       nfq: {
@@ -132,7 +134,7 @@ export const es: Translations = {
   footer: {
     rights: 'Todos los derechos reservados.',
     brandDescription:
-      'Backend Engineering Manager & Software Architect construyendo soluciones fintech escalables que marcan la diferencia.',
+      'Backend Engineering Manager & Software Architect. Construyendo plataformas y equipos en fintech desde 2009.',
     quickLinksTitle: 'Accesos rápidos',
     connectTitle: 'Conecta',
     builtWith: 'Construido con Astro, React, TypeScript & Tailwind CSS · AI-assisted •',

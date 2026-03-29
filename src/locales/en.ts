@@ -24,16 +24,18 @@ export const en: Translations = {
     title: 'About Me',
     content: [
       'Since 2009, I have worked across the full spectrum of software engineering: from hands-on development and architecture to technical consulting, development lead, and engineering management.',
-      'My profile combines technical depth with organizational leadership — designing scalable platforms, evolving engineering processes, and building high-performing teams in complex, regulated environments.',
+      'I combine technical depth with organizational leadership — designing scalable platforms, evolving engineering processes, and building high-performing teams in complex, regulated environments.',
       'Throughout my career I have contributed at multiple layers of the engineering function, including enterprise consulting for financial clients and strategic input on technology direction, team structure, and product alignment.',
     ],
     quickStats: [
-      { value: 'Since 2009', label: 'Engineering Leadership Experience' },
+      { value: 'Since 2009', label: 'Career in Software Engineering' },
+      { value: '6+ Years', label: 'Engineering Management' },
       { value: '~30 people', label: 'Built & Scaled Teams' },
       { value: 'Agile Methodologies', label: 'Real-World Implementation' },
       { value: 'Scalable Architectures', label: 'Designed & Delivered' },
-      { value: 'Cloud-Native Platform', label: 'Built From Scratch' },
       { value: 'Distributed Systems', label: 'at Scale' },
+      { value: 'Fintech & Banking', label: 'Domain Expertise' },
+      { value: 'Multi-Country', label: 'Enterprise Consulting' },
     ],
     coreExpertise: {
       title: 'Core Expertise',
@@ -79,7 +81,7 @@ export const en: Translations = {
         name: 'MyInvestor',
         position: 'Backend Engineering Manager',
         period: 'May 2019 - Present',
-        description: 'With a great team, leading the build-out of the digital neobank platform itself, powering both MyInvestor app and web experiences. Joined as the first engineer, creating the backend architecture and engineering team from scratch . Drove the evolution of systems, processes, and integrations in a regulated banking environment to scale product, reliability, and delivery speed.',
+        description: 'With a great team, leading the build-out of the digital neobank platform itself, powering both MyInvestor app and web experiences. Joined as the first in-house engineer, creating the backend architecture and engineering team from scratch. Drove the evolution of systems, processes, and integrations in a regulated banking environment to scale product, reliability, and delivery speed.',
         technologies: ['Java', 'Python', 'React', 'Spring Boot', 'AWS', 'Microservices', 'Kubernetes', 'PostgreSQL', 'Oracle', 'RabbitMQ', 'kafka', 'REST APIs', 'Event Sourcing', 'CQRS'],
       },
       nfq: {
@@ -132,7 +134,7 @@ export const en: Translations = {
   footer: {
     rights: 'All rights reserved.',
     brandDescription:
-      'Backend Engineering Manager & Software Architect building scalable fintech solutions that make a difference.',
+      'Backend Engineering Manager & Software Architect. Building platforms and teams in fintech since 2009.',
     quickLinksTitle: 'Quick Links',
     connectTitle: 'Connect',
     builtWith: 'Built with Astro, React, TypeScript & Tailwind CSS · AI-assisted •',
