@@ -5,11 +5,6 @@ on:
     branches: [master]
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
@@ -20,18 +15,30 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
     steps:
-      - uses: actions/checkout@v4
-      - uses: withastro/action@v3
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Install, build, and upload site
+        uses: withastro/action@v6
         with:
           node-version: 24.14.0
+          package-manager: npm
 
   deploy:
+    if: github.ref == 'refs/heads/master'
     needs: build
     runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
