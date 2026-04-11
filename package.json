@@ -21,25 +21,21 @@
     "sonar": "set -a; [ -f ./.env.sonar.local ] && . ./.env.sonar.local; set +a; sonar-scanner -Dsonar.host.url=${SONAR_HOST_URL:-http://localhost:9000} -Dsonar.token=${SONAR_TOKEN}"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.8",
-    "@astrojs/react": "^5.0.1",
-    "@astrojs/sitemap": "^3.7.1",
     "@fontsource/inter": "^5.2.8",
     "@radix-ui/react-slot": "^1.2.4",
-    "astro": "^6.0.8",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.38.0",
-    "lucide-react": "^0.577.0",
+    "lucide-react": "^1.8.0",
     "nanostores": "^1.2.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "sharp": "^0.34.5",
-    "tailwind-merge": "^3.5.0",
-    "tailwindcss-animate": "^1.0.7",
-    "typescript": "^5.9.3"
+    "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.9.8",
+    "@astrojs/react": "^5.0.1",
+    "@astrojs/sitemap": "^3.7.1",
     "@eslint/eslintrc": "^3.3.5",
     "@eslint/js": "^9.39.4",
     "@playwright/test": "^1.58.2",
@@ -53,6 +49,7 @@
     "@typescript-eslint/parser": "^8.57.1",
     "@vitejs/plugin-react": "^6.0.1",
     "@vitest/coverage-v8": "^4.1.0",
+    "astro": "^6.0.8",
     "astro-eslint-parser": "^1.4.0",
     "eslint": "^9.39.4",
     "eslint-plugin-astro": "^1.6.0",
@@ -63,6 +60,8 @@
     "prettier": "^3.8.1",
     "prettier-plugin-astro": "^0.14.1",
     "tailwindcss": "^4.2.2",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "^5.9.3",
     "vitest": "^4.1.0"
   }
 }
