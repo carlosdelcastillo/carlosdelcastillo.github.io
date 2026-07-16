@@ -1,6 +1,6 @@
 # CLAUDE.md — Portfolio of Carlos del Castillo
 
-This is the personal portfolio of **Carlos del Castillo**, Backend Engineering Manager and Software Architect, operating since 2009 at the intersection of fintech, platform engineering, and technical leadership. The site is live at **https://carlosdelcastillo.dev**.
+This is the personal portfolio of **Carlos del Castillo**, Backend Engineering Manager and Software Architect, operating since 2009 at the intersection of fintech, platform engineering, and technical leadership. The site is live at **<https://carlosdelcastillo.dev>**.
 
 The project is intentionally minimal in scope (no CMS, no database, no server). Every architectural decision reflects the same values Carlos applies professionally: performance-first, type-safe, tested, and maintainable.
 
@@ -21,12 +21,12 @@ All copy, tone, and emphasis must reinforce this positioning. When in doubt: tec
 ## Stack at a Glance
 
 | Layer | Technology |
-|---|---|
+| --- | --- |
 | Framework | Astro 6 (SSG) + React 19 |
 | Language | TypeScript 5 (strict mode) |
 | Styling | Tailwind CSS v4 + Framer Motion 12 |
 | State | Nanostores (theme) + React useState (ephemeral) |
-| Testing | Vitest 4 (unit) + Playwright 1.58 (E2E) |
+| Testing | Vitest 4 (unit) + Playwright 1.61 (E2E) |
 | Quality | ESLint 9 + Prettier 3 + SonarQube |
 | Deploy | GitHub Actions → GitHub Pages |
 | Node | 24.14.0 (pinned in `.nvmrc`) |
@@ -55,7 +55,7 @@ npm run sonar        # SonarQube analysis (requires local Sonar server + .env.so
 
 ## Architecture & File Map
 
-```
+```text
 src/
 ├── components/          # All UI — React (.tsx) or Astro (.astro)
 │   ├── ui/              # Headless primitives: button.tsx, card.tsx
@@ -137,7 +137,7 @@ The TypeScript interface in `src/types/translations.ts` enforces structural pari
 Components are server-rendered by Astro. Interactive components opt into client hydration:
 
 | Directive | Used for |
-|---|---|
+| --- | --- |
 | `client:load` | Navigation, Hero (visible immediately) |
 | `client:visible` | About, Experience, Education, Contact, Footer (below fold) |
 
@@ -240,7 +240,7 @@ All new features need coverage. Use existing tests as reference for patterns.
 This site targets **≥96/100/96/100** on Lighthouse (Perf/A11y/BP/SEO). Do not regress these thresholds.
 
 | Constraint | Rule |
-|---|---|
+| --- | --- |
 | Images | Use Astro's `<Image>` component for optimization. No unoptimized `<img>`. |
 | Fonts | Self-hosted via `@fontsource/inter`. No Google Fonts (privacy + performance). |
 | Bundle size | No new heavy dependencies without explicit justification. |

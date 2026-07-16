@@ -27,14 +27,14 @@ Built with a curated selection of industry-leading tools:
 
 ### Core
 
-![Astro](https://img.shields.io/badge/Astro-6.0-FF5D01?style=for-the-badge&logo=astro&logoColor=white)
+![Astro](https://img.shields.io/badge/Astro-6.4-FF5D01?style=for-the-badge&logo=astro&logoColor=white)
 ![React](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 
 ### Styling & Animation
 
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.2-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.38-0055FF?style=for-the-badge&logo=framer&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.3-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.42-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 
 ### Quality Assurance
 
