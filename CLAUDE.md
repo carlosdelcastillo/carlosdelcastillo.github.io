@@ -22,14 +22,14 @@ All copy, tone, and emphasis must reinforce this positioning. When in doubt: tec
 
 | Layer | Technology |
 | --- | --- |
-| Framework | Astro 6 (SSG) + React 19 |
-| Language | TypeScript 5 (strict mode) |
-| Styling | Tailwind CSS v4 + Framer Motion 12 |
+| Framework | Astro 7 (SSG) + React 19 |
+| Language | TypeScript 6 (strict mode) |
+| Styling | Tailwind CSS v4 + Framer Motion 13 |
 | State | Nanostores (theme) + React useState (ephemeral) |
-| Testing | Vitest 4 (unit) + Playwright 1.61 (E2E) |
+| Testing | Vitest 4 (unit) + Playwright 1.62 (E2E) |
 | Quality | ESLint 9 + Prettier 3 + SonarQube |
 | Deploy | GitHub Actions → GitHub Pages |
-| Node | 24.14.0 (pinned in `.nvmrc`) |
+| Node | 24.19.0 (pinned in `.nvmrc`) |
 
 ---
 
@@ -41,7 +41,7 @@ npm run build        # astro check + astro build → /dist
 npm run preview      # Preview production build locally
 npm run test         # Vitest unit tests (watch mode)
 npm run test:run     # Vitest unit tests (CI mode, single run)
-npm run test:e2e     # Playwright E2E (requires dev server running)
+npm run test:e2e     # Playwright E2E (starts the production preview automatically)
 npm run coverage     # Unit test coverage report → /coverage
 npm run lint         # ESLint check
 npm run format       # Prettier format
@@ -217,7 +217,7 @@ All new features need coverage. Use existing tests as reference for patterns.
 
 - Test files in `tests/e2e/`
 - Covers: routing, navigation, theme toggle, language switch, responsive layout
-- Requires dev server: `npm run dev` then `npm run test:e2e`
+- Starts the production preview automatically through Playwright's `webServer` configuration
 - CI: 2 retries, 5 browsers (Chromium, Firefox, WebKit, Pixel 5, iPhone 12)
 
 ### Coverage gate
@@ -230,7 +230,7 @@ All new features need coverage. Use existing tests as reference for patterns.
 
 - Run `npm audit` before every commit. Any `critical` or `high` vulnerability is a blocker — do not deploy until resolved.
 - Fix with `npm audit fix` (never `--force` unless you have verified the breaking change is safe).
-- Dependabot PRs for security fixes should be merged promptly. After merging, run `npm install` locally and re-run the quality gate.
+- Dependabot PRs for security fixes should be merged promptly. After merging, run `npm ci` locally and re-run the quality gate.
 - `moderate` and `low` advisories are warnings — document why they are accepted if left unfixed.
 
 ---
@@ -282,8 +282,8 @@ Avoid: "passionate developer", "team player", "results-driven", or any other gen
 
 - **Branch**: All production deploys from `master`
 - **Workflow**: `.github/workflows/deploy.yml`
-  - Job 1 (build): `withastro/action@v3` with Node 24.14.0
-  - Job 2 (deploy): `actions/deploy-pages@v4` → GitHub Pages
+  - Job 1 (build): `withastro/action@v6` with Node 24.19.0
+  - Job 2 (deploy): `actions/deploy-pages@v5`  → GitHub Pages
 - **Manual trigger**: `workflow_dispatch` is enabled
 - **No staging environment** — preview locally with `npm run preview`
 

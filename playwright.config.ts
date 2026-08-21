@@ -37,5 +37,9 @@ export default defineConfig({
     command: 'npm run preview',
     port: 4321,
     reuseExistingServer: !process.env.CI,
+    env: {
+      ...process.env,
+      ASTRO_PREVIEW_BACKGROUND: '0',
+    },
   },
 });

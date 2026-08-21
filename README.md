@@ -27,14 +27,15 @@ Built with a curated selection of industry-leading tools:
 
 ### Core
 
-![Astro](https://img.shields.io/badge/Astro-6.4-FF5D01?style=for-the-badge&logo=astro&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-24.19_LTS-5FA04E?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-6.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Astro](https://img.shields.io/badge/Astro-7.2-FF5D01?style=for-the-badge&logo=astro&logoColor=white)
 ![React](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 
 ### Styling & Animation
 
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.3-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.42-0055FF?style=for-the-badge&logo=framer&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-13.1-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 
 ### Quality Assurance
 
@@ -82,7 +83,7 @@ A clean, scalable architecture:
 
 ## 🚀 Getting Started
 
-To run this project locally, ensure you have **Node.js 24.14.0** installed (pinned in `.nvmrc`).
+To run this project locally, ensure you have **Node.js 24.19.0** installed (pinned in `.nvmrc`).
 
 ```bash
 # 1. Clone the repository
