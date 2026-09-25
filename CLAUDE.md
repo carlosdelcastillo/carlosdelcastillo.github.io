@@ -26,10 +26,10 @@ All copy, tone, and emphasis must reinforce this positioning. When in doubt: tec
 | Language | TypeScript 6 (strict mode) |
 | Styling | Tailwind CSS v4 + Framer Motion 13 |
 | State | Nanostores (theme) + React useState (ephemeral) |
-| Testing | Vitest 4 (unit) + Playwright 1.62 (E2E) |
+| Testing | Vitest 4 (unit) + Playwright 1.63 (E2E) |
 | Quality | ESLint 9 + Prettier 3 + SonarQube |
 | Deploy | GitHub Actions → GitHub Pages |
-| Node | 24.19.0 (pinned in `.nvmrc`) |
+| Node | 24.21.0 (pinned in `.nvmrc`) |
 
 ---
 
@@ -282,7 +282,7 @@ Avoid: "passionate developer", "team player", "results-driven", or any other gen
 
 - **Branch**: All production deploys from `master`
 - **Workflow**: `.github/workflows/deploy.yml`
-  - Job 1 (build): `withastro/action@v6` with Node 24.19.0
+  - Job 1 (build): `withastro/action@v6` with Node 24.21.0
   - Job 2 (deploy): `actions/deploy-pages@v5`  → GitHub Pages
 - **Manual trigger**: `workflow_dispatch` is enabled
 - **No staging environment** — preview locally with `npm run preview`
