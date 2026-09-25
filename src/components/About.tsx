@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { getTranslations, type Locale } from '@/locales';
 import { Server, Cloud, Users, Rocket } from 'lucide-react';
+import { MANAGEMENT_START } from '@/content/career-timeline';
+import { getFullYearsSince } from '@/lib/date';
 import {
   createFadeStaggerContainer,
   createFadeUpItem,
@@ -14,6 +16,7 @@ interface AboutProps {
 
 export default function About({ initialLang = 'en' }: Readonly<AboutProps>) {
   const translations = getTranslations(initialLang);
+  const managementYears = getFullYearsSince(MANAGEMENT_START);
 
   const containerVariants = createFadeStaggerContainer(0.1);
   const itemVariants = createFadeUpItem(0.5, 20);
@@ -65,7 +68,9 @@ export default function About({ initialLang = 'en' }: Readonly<AboutProps>) {
             >
               {translations.about.quickStats.map((stat) => (
                 <div key={`${stat.label}-${stat.value}`} className="glass p-4 rounded-xl border-border/40 text-center">
-                   <div className="text-lg font-bold gradient-text break-words leading-tight">{stat.value}</div>
+                   <div className="text-lg font-bold gradient-text break-words leading-tight" suppressHydrationWarning>
+                     {stat.value.replace('{years}', String(managementYears))}
+                   </div>
                    <div className="text-sm text-muted-foreground font-medium mt-1">{stat.label}</div>
                 </div>
               ))}
