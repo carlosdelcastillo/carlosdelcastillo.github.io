@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Mail } from 'lucide-react';
 import { getTranslations, type Locale } from '@/locales';
+import { CAREER_START } from '@/content/career-timeline';
+import { getFullYearsSince } from '@/lib/date';
 import {
   createFadeStaggerContainer,
   createFadeUpItem,
@@ -22,6 +24,7 @@ interface HeroProps {
 export default function Hero({ initialLang = 'en' }: Readonly<HeroProps>) {
   const translations = getTranslations(initialLang);
   const isSpanish = initialLang === 'es';
+  const careerYears = getFullYearsSince(CAREER_START);
   const emailSubject = isSpanish
     ? 'Hablemos sobre una posible colaboración'
     : "Let's talk about a possible collaboration";
@@ -79,8 +82,9 @@ export default function Hero({ initialLang = 'en' }: Readonly<HeroProps>) {
               <p
                 key={paragraph}
                 className="text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed"
+                suppressHydrationWarning
               >
-                {paragraph}
+                {paragraph.replace('{years}', String(careerYears))}
               </p>
             ))}
           </motion.div>

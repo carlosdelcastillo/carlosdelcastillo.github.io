@@ -11,7 +11,7 @@ export const es: Translations = {
   hero: {
     greeting: 'Soy Carlos del Castillo',
     description: [
-      'Engineering Manager con más de 15 años en desarrollo de software, arquitectura y consultoría — construyendo plataformas y equipos en entornos fintech y regulados.',
+      'Engineering Manager con más de {years} años en desarrollo de software, arquitectura y consultoría — construyendo plataformas y equipos en entornos fintech y regulados.',
       'Combino profundidad técnica y perspectiva organizativa para entregar sistemas que escalan y equipos que los sostienen.',
     ],
     cta: {
@@ -29,7 +29,7 @@ export const es: Translations = {
     ],
     quickStats: [
       { value: 'Desde 2009', label: 'Experiencia en ingeniería de software' },
-      { value: '6+ Años', label: 'Gestión de personas' },
+      { value: '{years}+ Años', label: 'Gestión de personas' },
       { value: '~30 personas', label: 'Equipos creados y escalados' },
       { value: 'Metodologías Ágiles', label: 'Implantación real' },
       { value: 'Arquitecturas Escalables', label: 'Diseño e implantación' },

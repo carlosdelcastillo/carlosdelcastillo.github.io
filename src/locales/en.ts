@@ -11,7 +11,7 @@ export const en: Translations = {
   hero: {
     greeting: "I'm Carlos del Castillo",
     description: [
-      'Engineering Manager with 15+ years spanning software development, architecture, and consulting — building platforms and teams in fintech and regulated environments.',
+      'Engineering Manager with {years}+ years spanning software development, architecture, and consulting — building platforms and teams in fintech and regulated environments.',
       'I bring together technical depth and organizational perspective to deliver systems that scale, and the teams that sustain them.',
     ],
     cta: {
@@ -29,7 +29,7 @@ export const en: Translations = {
     ],
     quickStats: [
       { value: 'Since 2009', label: 'Career in Software Engineering' },
-      { value: '6+ Years', label: 'Engineering Management' },
+      { value: '{years}+ Years', label: 'Engineering Management' },
       { value: '~30 people', label: 'Built & Scaled Teams' },
       { value: 'Agile Methodologies', label: 'Real-World Implementation' },
       { value: 'Scalable Architectures', label: 'Designed & Delivered' },

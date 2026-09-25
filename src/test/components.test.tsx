@@ -9,6 +9,8 @@ import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import Navigation from '@/components/Navigation';
 import { getTranslations } from '@/locales';
+import { getFullYearsSince } from '@/lib/date';
+import { CAREER_START, MANAGEMENT_START } from '@/content/career-timeline';
 
 describe('Core components', () => {
   test('renders Hero content in Spanish with localized CTA links', () => {
@@ -30,6 +32,15 @@ describe('Core components', () => {
     );
   });
 
+  test('renders the computed career-years count in the hero description', () => {
+    render(<Hero initialLang="en" />);
+    const expectedYears = getFullYearsSince(CAREER_START);
+
+    expect(
+      screen.getByText(new RegExp(`${expectedYears}\\+ years`))
+    ).toBeInTheDocument();
+  });
+
   test('renders About section localized labels and quick stats', () => {
     const t = getTranslations('en');
     render(<About initialLang="en" />);
@@ -39,6 +50,15 @@ describe('Core components', () => {
     expect(screen.getByText(t.about.coreExpertise.title)).toBeInTheDocument();
     expect(
       screen.getByText(t.about.coreExpertise.categories[0].title)
+    ).toBeInTheDocument();
+  });
+
+  test('renders the computed management-years count in the about quick stats', () => {
+    render(<About initialLang="en" />);
+    const expectedYears = getFullYearsSince(MANAGEMENT_START);
+
+    expect(
+      screen.getByText(new RegExp(`^${expectedYears}\\+ Years$`))
     ).toBeInTheDocument();
   });
 
